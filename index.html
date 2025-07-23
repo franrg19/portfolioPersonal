@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Fran Rebollo Dev</title>
+    <title>Portfolio Fran Rebollo</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <link rel="icon" type="image/png" href="img/logo 2.png" />
 </head>
+
 <body>
-    
+    <header>
+
+        <nav>
+            <div class="logo-nav">
+                <img src="img/logo 2.png" alt="Logotipo Fran Rebollo" class="logo-icon">
+            </div>
+
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Conóceme</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#curriculum">Currículum</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="Bienvenida" id="inicio">
+            <h1>Fran Rebollo</h1>
+            <p>Desarrollador de Aplicaciones Multiplataforma | Apasionado por la tecnología</p>
+        </section>
+
+        <section id="sobremi">
+            <h2>Sobre mí</h2>
+            <p>Soy Fran, tengo 32 años y soy de Málaga. Tras más de 10 años gestionando operaciones en un campo de golf,
+                decidí reinventarme profesionalmente y apostar por mi verdadera pasión: la programación. Actualmente me
+                estoy formando como Desarrollador de Aplicaciones Multiplataforma, reforzando mis conocimientos previos
+                en desarrollo web con WordPress, diseño gráfico y redes sociales.</p>
+            <p>Me considero una persona proactiva, con gran capacidad para resolver problemas, aprender de forma
+                continua y trabajar en equipo.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+            </article>
+            <article>
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+            </article>
+            <article>
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto 3.</p>
+            </article>
+        </section>
+
+        <section id="curriculum">
+            <h2>Currículum</h2>
+            <p>Resumen de formación y experiencia profesional.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required />
+                <label>Email:</label>
+                <input type="email" name="email" required />
+                <label>Mensaje:</label>
+                <textarea name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <div id="cookie-popup" class="hidden">
+            <p>Este sitio usa cookies para mejorar tu experiencia. <button id="aceptar-cookies">Aceptar</button></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fran Rebollo | <a href="privacidad.html">Política de privacidad</a></p>
+    </footer>
+
+
+
 </body>
+
 </html>

@@ -1,0 +1,121 @@
+:root {
+  --carbon:#16151c;
+  --lime: #c5e34b;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--carbon);
+  color: var(--lime);
+  font-family: Lemo;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: var(--carbon);
+  color: var(--lime);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul.menu {
+  list-style: none;
+  background-color:var(--lime);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+nav ul.menu li a {
+  color: var(--carbon);
+  padding-bottom: 5rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-icon {
+  height: 12rem;
+  width: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  color: var(--lime);
+  font-size: 1.5rem;
+  border: none;
+}
+
+
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #222;
+  border: 1px solid var(--lime);
+  color: var(--lime);
+}
+
+form button {
+  background-color: var(--lime);
+  color: var(--carbon);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#cookie-popup {
+  position: fixed;
+  bottom: 0;
+  background: #222;
+  color: var(--lime);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.menu.visible {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@font-face {
+    font-family: Lemon;
+    src: url(/Fonts/LEMONMILK-Medium.otf);
+}
