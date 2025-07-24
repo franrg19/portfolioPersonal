@@ -39,26 +39,23 @@
   src: url(/Fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
-.logo-nav {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-
-}
 
 .logo-icon {
-  max-height: 50%;
-  max-width: 50%;
+  height: 70vh;
 }
 
 h1 {
   font-family: 'popins';
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h2 {
   font-family: 'popins';
   font-size: 2rem;
+}
+
+.contenedor-bienvenida {
+  height: 100vh;
 }
 
 .Bienvenida {
@@ -68,16 +65,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.6;
-}
-.contenedor-bienvenida{
-  height: 100vh;
-}
-
-.logo-divisor {
-  transform: scale(0.5);
-  text-align: center;
-  margin-top: -10rem;
-  margin-bottom: 1.5rem;
 }
 
 body {
@@ -91,7 +78,7 @@ header,
 footer {
   background-color: var(--carbon);
   color: var(--lime);
-  padding: 1rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -131,8 +118,8 @@ section {
 .conoceme {
   line-height: 1.6;
   font-family: 'popins';
-  height: auto;              
-  display: flex;                
+  height: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -169,7 +156,7 @@ section {
   transition: transform 0.3s ease-in-out;
 }
 
-.contenedor-proyectos img:hover{
+.contenedor-proyectos img:hover {
   transform: scale(1.1);
 }
 
@@ -178,11 +165,11 @@ section {
   color: var(--lime);
 }
 
-.cv{
+.cv {
   line-height: 1.6;
   font-family: 'popins';
-  height: auto;              
-  display: flex;                
+  height: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -190,7 +177,7 @@ section {
   color: white;
 }
 
-.estudios-content{
+.estudios-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -198,7 +185,8 @@ section {
   padding: 20px;
 }
 
-.estudios-content .estudios,.experiencia {
+.estudios-content .estudios,
+.experiencia {
   background-color: #2b2b2b;
   color: white;
   padding: 20px;
@@ -212,57 +200,59 @@ section {
   font-family: 'popins';
 }
 
-.estudios h3,.experiencia h3{
-  color:var(--white);
+.estudios h3,
+.experiencia h3 {
+  color: var(--white);
   font-size: 30px;
   font-family: 'popins';
 }
 
-.estudios h4,.experiencia h4{
+.estudios h4,
+.experiencia h4 {
   color: var(--lime);
 }
 
-.tecnologias-presentacion h4{
+.tecnologias-presentacion h4 {
   font-size: 20px;
   color: var(--lime);
 }
 
-.tecnologias-presentacion{
+.tecnologias-presentacion {
   line-height: 1.6;
   font-family: 'popins';
   color: #fff;
 
 }
 
-.tecnologias-icon{
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    border-spacing: 15px 15px;
-    background-color: #222;
-    margin-top: 5%;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    
+.tecnologias-icon {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  border-spacing: 15px 15px;
+  background-color: #222;
+  margin-top: 5%;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+
 }
 
-.tecnologias-icon td{
-    vertical-align: center;
+.tecnologias-icon td {
+  vertical-align: center;
 }
 
-.tecnologias-icon img{
-    padding: 0;
-    width: 40px;
-    height: 40px;
+.tecnologias-icon img {
+  padding: 0;
+  width: 40px;
+  height: 40px;
 }
 
-.tecnologias-icon p{
-    font-family: 'popins';
-    font-size: 16px;
+.tecnologias-icon p {
+  font-family: 'popins';
+  font-size: 16px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
-  
+
 }
 
 
@@ -270,6 +260,7 @@ form input,
 form textarea {
   display: block;
   width: 100%;
+  font-family: 'popins';
   margin-bottom: 1rem;
   padding: 0.5rem;
   background-color: #222;
@@ -283,10 +274,178 @@ form button {
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
 form button:hover,
 form button:focus {
-  background-color:var(--CV);
+  background-color: var(--CV);
 }
 
+.main-footer {
+  width: 100%;
+  background-color: grey;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20px;
+}
+.footer-content{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p{
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.social-links{
+   margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px;
+}
+
+.social-links img{
+
+}
+
+
+/* Tablets y móviles (≤ 768px) */
+@media (max-width: 768px) {
+  .logo-icon {
+    height: 30vh;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bienvenida {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  .contenedor-proyectos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-proyectos article {
+    max-width: 90%;
+  }
+
+  .estudios-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tecnologias-icon {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .tecnologias-icon td {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .social-links img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+/* Móviles pequeños (≤ 480px) */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+
+  .bienvenida p {
+    font-size: 1rem;
+  }
+
+  .contenedor-proyectos article h3 {
+    font-size: 1.2rem;
+  }
+
+  .contenedor-proyectos article p {
+    font-size: 0.95rem;
+  }
+}
+
+/* HAMBURGUESA */
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1001;
+  }
+
+  .menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: var(--lime);
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--lime);
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  nav ul.menu.show {
+    display: flex;
+  }
+
+  nav ul.menu li {
+    margin: 10px 0;
+  }
+
+  nav ul.menu li a {
+    padding: 10px;
+  }
+}

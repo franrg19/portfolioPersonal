@@ -12,16 +12,17 @@
 <body>
     <header>
 
-        <nav>
-            <div class="logo-nav">
-                <img src="img/logo 2.png" alt="Logotipo Fran Rebollo" class="logo-icon">
+        <nav class="nav">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#sobremi">Conóceme</a></li>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#curriculum">Currículum</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -29,18 +30,16 @@
     </header>
 
     <main>
+
         <div class="contenedor-bienvenida">
             <section class="Bienvenida" id="inicio">
-                <h1>Fran Rebollo </h1>
+                <div class="logo-nav">
+                    <img src="img/logo 2.png" alt="Logotipo Fran Rebollo" class="logo-icon">
+                </div>
+                <h1>Portafolio y proyectos de Fran Rebollo</h1>
                 <p>Desarrollador de Aplicaciones Multiplataforma | Apasionado por la tecnología</p>
                 <p>Estudiando FPS DAM</p>
             </section>
-
-            <div class="logo-divisor">
-                <img src="/img/icono programacion.png" alt="icono programacion">
-            </div>
-
-
         </div>
 
 
@@ -112,7 +111,7 @@
                     <h4>Curso superior Dirección y gestion de campos de golf</h4>
                     <p>2018-2019</p>
 
-                    <h4>Cursp superior en Dirección deportiva y operaciones Club de golf</h4>
+                    <h4>Curso superior en Dirección deportiva y operaciones Club de golf</h4>
                     <p>2017-2018</p>
 
                     <h4>FP GM Técnico en Emergencias Sanitarias</h4>
@@ -123,14 +122,14 @@
 
                 <div class="experiencia">
 
-                    <h3>EXPERINENCIA LABORAL</h3>
+                    <h3>EXPERIENCIA LABORAL</h3>
                     <h4>Real Guadalhorce Club de Golf</h4>
                     <p>2015-actualidad</p>
 
                     <h4>Desarrollador web WordPress (freelance)</h4>
                     <p>2020-actualidad </p>
 
-                    <h4>Gestion Rss (freelance)</h4>
+                    <h4>Gestion de RSS (freelance)</h4>
                     <p>2020-actualidad </p>
 
                 </div>
@@ -185,13 +184,13 @@
 
         <section id="contacto">
             <h2>✍️ CONTACTO</h2>
-            <form>
+            <form action="mailto:info.franrg@gmail.com" method="post" enctype="text/plain">
                 <label>Nombre:</label>
-                <input type="text" name="nombre" required />
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
                 <label>Email:</label>
-                <input type="email" name="email" required />
+                <input type="email" name="email" placeholder="Tu email" required />
                 <label>Mensaje:</label>
-                <textarea name="mensaje" required></textarea>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
@@ -200,10 +199,22 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Fran Rebollo | <a href="privacidad.html">Política de privacidad</a></p>
+        <div class="main-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Fran Rebollo | Todos los derechos reservados | Diseñado por Fran Rebollo <br> <a
+                        href="privacidad.html">Política de privacidad</a></p>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/francisco-rebollo-gonzalez/"><img
+                            src="img/icons8-linkedin-50.png" alt="icono linkedin"></a>
+                    <a href="https://github.com/franrg19"><img src="img/icons8-github-50.png" alt="logo github"></a>
+                </div>
+            </div>
+
+        </div>
     </footer>
 
-
+<script src="JS/scripts.js"></script>
 
 </body>
 
