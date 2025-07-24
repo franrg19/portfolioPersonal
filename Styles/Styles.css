@@ -1,18 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*paleta colores*/
+
 :root {
-  --carbon:#16151c;
+  --carbon: #16151c;
   --lime: #c5e34b;
   --white: #fff;
+  --CV: #79e24b;
+}
+
+/*Fuentes*/
+
+@font-face {
+  font-family: 'lemon';
+  src: url(/Fonts/Lemon-Regular.ttf)
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url(/Fonts/BebasNeue-Regular.otf);
+}
+
+@font-face {
+  font-family: 'popins';
+  src: url(/Fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'space';
+  src: url(/Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+}
+
+.logo-icon {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+h1 {
+  font-family: 'popins';
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'popins';
+  font-size: 2rem;
+}
+
+.Bienvenida {
+  justify-content: center;
+  text-align: center;
+  font-family: 'montserrat';
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contenedor-bienvenida{
+  height: 100vh;
+}
+
+.logo-divisor {
+  transform: scale(0.5);
+  text-align: center;
+  margin-top: -10rem;
+  margin-bottom: 1.5rem;
 }
 
 body {
   background-color: var(--carbon);
   color: var(--lime);
-  font-family: Lemo;
-  margin: 0;
-  padding: 0;
+  font-family: 'Montserrat';
+  text-align: justify;
 }
 
-header, footer {
+header,
+footer {
   background-color: var(--carbon);
   color: var(--lime);
   padding: 1rem;
@@ -21,43 +97,27 @@ header, footer {
 
 nav ul.menu {
   list-style: none;
-  background-color:var(--lime);
+  background-color: var(--lime);
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  padding: 10px;
+  gap: 2rem;
+  padding: 15px;
 }
 
 nav ul.menu li a {
   color: var(--carbon);
-  padding-bottom: 5rem;
+  padding-bottom: 1rem, 0;
   text-decoration: none;
   font-weight: 700;
 }
 
-
-.logo-nav {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.logo-icon {
-  height: 12rem;
-  width: auto;
-  object-fit: contain;
-  display: inline-block;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
+nav ul.menu li a:hover,
+nav ul.menu li a:focus {
+  background-color: var(--carbon);
   color: var(--lime);
-  font-size: 1.5rem;
-  border: none;
+  text-decoration: underline;
+  padding: 1rem;
 }
-
 
 
 main {
@@ -68,7 +128,146 @@ section {
   margin-bottom: 2rem;
 }
 
-form input, form textarea {
+.conoceme {
+  line-height: 1.6;
+  font-family: 'popins';
+  height: auto;              
+  display: flex;                
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.contenedor-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.contenedor-proyectos article {
+  background-color: #2b2b2b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'popins';
+}
+
+.contenedor-proyectos img {
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-proyectos img:hover{
+  transform: scale(1.1);
+}
+
+.contenedor-proyectos h3 {
+  font-size: 30px;
+  color: var(--lime);
+}
+
+.cv{
+  line-height: 1.6;
+  font-family: 'popins';
+  height: auto;              
+  display: flex;                
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.estudios-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.estudios-content .estudios,.experiencia {
+  background-color: #2b2b2b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'popins';
+}
+
+.estudios h3,.experiencia h3{
+  color:var(--white);
+  font-size: 30px;
+  font-family: 'popins';
+}
+
+.estudios h4,.experiencia h4{
+  color: var(--lime);
+}
+
+.tecnologias-presentacion h4{
+  font-size: 20px;
+  color: var(--lime);
+}
+
+.tecnologias-presentacion{
+  line-height: 1.6;
+  font-family: 'popins';
+  color: #fff;
+
+}
+
+.tecnologias-icon{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border-spacing: 15px 15px;
+    background-color: #222;
+    margin-top: 5%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    
+}
+
+.tecnologias-icon td{
+    vertical-align: center;
+}
+
+.tecnologias-icon img{
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.tecnologias-icon p{
+    font-family: 'popins';
+    font-size: 16px;
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+
+form input,
+form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -86,36 +285,8 @@ form button {
   cursor: pointer;
 }
 
-#cookie-popup {
-  position: fixed;
-  bottom: 0;
-  background: #222;
-  color: var(--lime);
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
+form button:hover,
+form button:focus {
+  background-color:var(--CV);
 }
 
-.hidden {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  nav ul.menu {
-    display: none;
-    flex-direction: column;
-  }
-
-  nav ul.menu.visible {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-@font-face {
-    font-family: Lemon;
-    src: url(/Fonts/LEMONMILK-Medium.otf);
-}
