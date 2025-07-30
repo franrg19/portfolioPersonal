@@ -500,6 +500,36 @@ form button:focus {
   nav ul.menu li a {
     padding: 10px;
   }
+}
 
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 10000;
+}
 
+.cookie-popup p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.cookie-popup button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 30px;
 }
