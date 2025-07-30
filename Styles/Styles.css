@@ -82,6 +82,14 @@ footer {
   text-align: center;
 }
 
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
 nav ul.menu {
   list-style: none;
   background-color: var(--lime);
@@ -122,10 +130,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
   padding: 10px;
   color: white;
 }
+
 
 .contenedor-proyectos {
   display: flex;
@@ -286,36 +295,53 @@ form button:focus {
 
 .main-footer {
   width: 100%;
-  background-color: grey;
+  background-color: var(--lime);
   padding: 20px 0px;
   text-align: center;
   font-size: 1em;
   margin-top: 20px;
 }
-.footer-content{
+
+.footer-content {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-content p{
+.footer-content p {
   line-height: 1.6;
+  color: #16151c;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
-.social-links{
-   margin-top: 15px;
-    margin-bottom: 20px;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 15px;
+.social-links {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.social-links img{
+.politica-privacidad {
+  padding: 2rem;
+  margin-top:50px ;
+}
 
+.politica-privacidad h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.politica-privacidad ul {
+  padding-left: 1.5rem;
+}
+
+.politica-privacidad p,
+.politica-privacidad li {
+  margin-bottom: 1rem;
 }
 
 
@@ -336,7 +362,8 @@ form button:focus {
     font-size: 1.2rem;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 1.6rem;
   }
 
@@ -380,16 +407,31 @@ form button:focus {
     width: 30px;
     height: auto;
   }
+
+  .politica-privacidad {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .politica-privacidad h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Móviles pequeños (≤ 480px) */
 @media (max-width: 480px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 1.3rem;
   }
 
   .bienvenida p {
     font-size: 1rem;
+  }
+
+  .conoceme,.cv{
+    text-align: justify;
   }
 
   .contenedor-proyectos article h3 {
@@ -399,6 +441,16 @@ form button:focus {
   .contenedor-proyectos article p {
     font-size: 0.95rem;
   }
+
+  .politica-privacidad {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .politica-privacidad h3 {
+    font-size: 1.3rem;
+  }
+
 }
 
 /* HAMBURGUESA */
@@ -448,4 +500,6 @@ form button:focus {
   nav ul.menu li a {
     padding: 10px;
   }
+
+
 }
