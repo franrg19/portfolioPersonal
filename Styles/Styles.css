@@ -181,7 +181,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
   padding: 10px;
   color: white;
 }
