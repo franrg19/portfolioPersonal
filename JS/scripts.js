@@ -8,17 +8,16 @@ const toggle = document.getElementById("menu-toggle");
 
   /* cookies*/
 
-  document.addEventListener('DOMContentLoaded', () => {
   const popup = document.getElementById('cookie-popup');
-  const acceptBtn = document.getElementById('accept-cookies');
+  const acceptBtn = document.getElementById('acceptCookies');
 
   // Comprobar si ya aceptó
-  if (!localStorage.getItem('cookiesAccepted')) {
-    popup.style.display = 'flex';
+  if (!localStorage.acceptCookies) {
+    popup.classList.add ("show")
   }
 
-  acceptBtn.addEventListener('click', () => {
-    localStorage.setItem('cookiesAccepted', 'true');
-    popup.style.display = 'none';
+  acceptBtn.addEventListener('click',function () {
+    localStorage.acceptCookies="true";
+    popup.classList.remove("show")
+    
   });
-});
